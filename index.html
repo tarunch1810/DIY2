@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>D.I.Y CLUB</title>
+	<link rel="stylesheet"  href="style.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+		<div class="navbar">
+			<a href="https://vitap.ac.in/"><img src="images/logo.jpg" class="logo"></a>
+			<nav>
+				<ul id="menuList">
+				 <li><a href="#row">Home</a></li>
+                 
+                 <li><a href="#gallery">Gallery</a></li> 
+                 <li><a href="#team">Team</a></li>
+                 <li><a href="#social-links">Social media</a></li> 
+				</ul>
+			</nav>
+			<img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+		<div class="row" id="row">
+			<div class="col-1">
+				<h2 style="">Bring out<br> the creativity<br> in you.</h2>
+				<a href=""><button type="button">Register Now <img src="images/arrow.png"></button></a>
+			</div>
+			<div class="col-2">
+			<img src="images/DIY2.png" class="DIYLOGO">
+			<div class="color-box"></div>
+			<div class="add-event" style="margin-left: 10px">
+				<h2>UPCOMING EVENTS</h2><br>
+				<h3 style="color: grey">EVENT NAME</h3>
+				<a href="https://vitap.ac.in/"><button type="button" style="margin: 18px"> Register for event <img src="images/arrow.png"></button></a>
+			</div>	
+			</div>
+		</div>
+		<div id="gallery" style="padding-top: 2.9%;height:70px;width:100%;background-image: linear-gradient(to right,black,#1E9E9E);display: flex;"></div>
+		<div class="row" id="row1"style="background-image: url('images/gallerybg.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 100%;
+  height: auto;" >
+			<div class="col-1">
+				<h2 style="color: white">GALLERY</h2>
+				
+			</div>
+			<div class="col-2">
+			<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="images/img1.jpg" style="width:100%;padding: 20px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="images/img2.jpg" style="width:100%;padding: 20px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="images/img3.jpg" style="width:100%;padding: 20px">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="images/img4.jpg" style="width:100%;padding: 20px">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="images/img5.jpg" style="width:100%;padding: 20px">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="images/img6.jpg" style="width:100%;padding: 20px">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+
+			</div>
+		</div>
+		<div id="team" style="padding-top: 2.9%;height:70px;width:80%px;background-image: linear-gradient(to right,black,#1E9E9E);display: flex;"></div>
+		<div class="row"id="row"style="background-image: url('images/teambg.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 100%;
+  height: auto;">
+  <h2 style="color: white">TEAM</h2>
+  <div class="column">
+
+    <img src="./images/president.jpg" alt="Snow" style="width:60%; margin:10px">
+  </div>
+  <div class="column">
+    <img src="./images/president.jpg" alt="Forest" style="width:60%;margin:10px">
+  </div>
+  <div class="column">
+    <img src="./images/president.jpg" alt="Mountains" style="width:60%;margin:10px">
+  </div>
+</div>
+
+</body>
+</html>
+		<div class="social-links" id="social-links">
+			<a href=""><img src="images/linkedin.png"></a>
+			<a href=""><img src="images/images.png"></a>
+		</div>
+	</div>
+	<script>
+		var menuList=document.getElementById("menuList");
+		menuList.style.maxHeight="0px";
+		function togglemenu(){
+			if(menuList.style.maxHeight=="0px")
+			{
+				menuList.style.maxHeight="130px";
+			}
+			else
+				{
+				menuList.style.maxHeight="0px";
+			}
+		}
+
+	</script>
+
+</body>
+</html>
